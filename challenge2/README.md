@@ -7,7 +7,7 @@ SMS messaging wasn’t always as easy as a swipe over a qwerty keyboard.  There 
 ```
 222.2.8 = CAT
 3.666.4 = DOG
-22.777.2.888.666 55.8 = BRAVO LT
+22.777.2.888.666 555.8 = BRAVO LT
 ```
 
 For those of you who do not have a phone with letters associated to numbers, the following layout should be used:
