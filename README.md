@@ -22,6 +22,6 @@ Entries are granted based upon the challenges you solve.  They are numbered in o
 
 
 
-#### BEST OF LUCK TO ALL ENTRANTS!
+#### GOOD LUCK AND HAVE FUN!
 
 
