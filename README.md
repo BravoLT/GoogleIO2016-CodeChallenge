@@ -3,7 +3,7 @@
 ## The Electronic Messaging Challenge
 I/O Extended GR Platinum Sponsor Bravo LT is excited to announce our Code Challenge just in time for the big event!
 
-This year our theme is "electronic messaging."  Messaging is an integral part of our everyday lives, and today the vast majoriy of that messaging happens electronically.  Whether by SMS, chat, email, tweet, or other social networking, it is safe to say that electronic messaging is the preferred communication medium of this generation.   
+This year our theme is "electronic messaging."  Messaging is an integral part of our everyday lives, and today the vast majority of that messaging happens electronically.  Whether by SMS, chat, email, tweet, or other social networking, it is safe to say that electronic messaging is the preferred communication medium of this generation.   
 
 ### What can I win?
 This year we have a ton of great prizes, including an ASUS ZenWatch 2, a Raspberry Pi 3, a Chromecast, or Chromecast Audio. Participants at the conference are welcome to submit entries via this Github repository.  Winners will be drawn at 3:30pm on Wednesday, May 18th.  Notifications will be done by text or email, and you must pick up your prize at the Bravo LT booth by 6pm.
