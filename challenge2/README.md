@@ -14,10 +14,10 @@ For those of you who do not have a phone with letters associated to numbers, the
 ```
 |  1  |  2  |  3  |
 |     | ABC | DEF |
-~~~~~~~~~~~~~~~~~~~
+-------------------
 |  4  |  5  |  6  |
 | GHI | JKL | MNO |
-~~~~~~~~~~~~~~~~~~~
+-------------------
 |  7  |  8  |  9  |
 |PQRS | TUV |WXYZ |
 ```
