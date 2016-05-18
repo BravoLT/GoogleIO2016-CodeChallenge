@@ -28,8 +28,13 @@ public class Morse {
 	static Node root = null;
 
 	private static Node buildTree() {
+		Node qMark = new Node('?',null,null);
+		Node slash = new Node('/',null,null);
+		Node asym = new Node('@',null,null);
 		Node period = new Node('.',null,null);
 		Node AR = new Node('\n',period,null);
+		Node aTop = new Node(' ',null,asym);
+		Node qTop = new Node(' ',null,qMark);
 		Node Ä = new Node('Ä',null,AR);
 		Node zero = new Node('0', null, null);
 		Node nine = new Node('9', null, null);
@@ -48,7 +53,7 @@ public class Morse {
 		Node y = new Node('Y', null, null);
 		Node c = new Node('C', null, null);
 		Node k = new Node('K', y, c);
-		Node x = new Node('X', null, null);
+		Node x = new Node('X', null, slash);
 		Node b = new Node('B', null, six);
 		Node d = new Node('D', x, b);
 		Node n = new Node('N', k, d);
@@ -59,9 +64,9 @@ public class Morse {
 		Node four = new Node('4', null, null);
 		Node five = new Node('5', null, null);
 		Node j = new Node('J', one, null);
-		Node p = new Node('P', null, null);
+		Node p = new Node('P', aTop, null);
 		Node l = new Node('L', null, null);
-		Node dash = new Node('-', two, null);
+		Node dash = new Node('-', two, qTop);
 		Node f = new Node('F', null, null);
 		Node v = new Node('V', three, null);
 		Node h = new Node('H', four, five);
