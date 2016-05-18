@@ -19,7 +19,12 @@ namespace challenge1
         private static void Main(string[] args)
         {
             for (int i = 1; i <= 101; i++)
-                Console.WriteLine($"{i}. Prime: {IsPrime(i)}");
+            {
+                if (i == 2)
+                    Console.WriteLine("2. Prime: True (and the only even prime number)");
+                else
+                    Console.WriteLine($"{i}. Prime: {IsPrime(i)}");
+            }
 
             Console.WriteLine("Press ENTER to exit.");
             Console.ReadLine();
