@@ -60,13 +60,68 @@ class Node
   end
 end
 
+class MorseCode
+  def self.convertString(string)
+    rootNode = Node.new()
 
-rootNode = Node.new()
+    rootNode.push(".-",    "A")
+    rootNode.push("-...",  "B")
+    rootNode.push("-.-.",  "C")
+    rootNode.push("-..",   "D")
+    rootNode.push(".",     "E")
+    rootNode.push("..-.",  "F")
+    rootNode.push("--.",   "G")
+    rootNode.push("....",  "H")
+    rootNode.push("..",    "I")
+    rootNode.push(".---",  "J")
+    rootNode.push("-.-",   "K")
+    rootNode.push(".-..",  "L")
+    rootNode.push("--",    "M")
+    rootNode.push("-.",    "N")
+    rootNode.push("---",   "O")
+    rootNode.push(".--.",  "P")
+    rootNode.push("--.-",  "Q")
+    rootNode.push(".-.",   "R")
+    rootNode.push("...",   "S")
+    rootNode.push("-",     "T")
+    rootNode.push("..-",   "U")
+    rootNode.push("...-",  "V")
+    rootNode.push(".--",   "W")
+    rootNode.push("-..-",  "X")
+    rootNode.push("-.--",  "Y")
+    rootNode.push("--..",  "Z")
 
-rootNode.push(".", "E")
-rootNode.push("..", "I")
-rootNode.push("...", "S")
+    rootNode.push(".-.-.-", ".")
+    rootNode.push("--..--", ",")
+    rootNode.push("..--..", "?")
+    rootNode.push("-..-.", "/")
+    rootNode.push(".--.-.", "@")
 
-puts rootNode.pull(".")
-puts rootNode.pull("..")
-puts rootNode.pull("...")
+    rootNode.push(".----", "1")
+    rootNode.push("..---", "2")
+    rootNode.push("...--", "3")
+    rootNode.push("....-", "4")
+    rootNode.push(".....", "5")
+    rootNode.push("-....", "6")
+    rootNode.push("--...", "7")
+    rootNode.push("---..", "8")
+    rootNode.push("----.", "9")
+    rootNode.push("-----", "0")
+
+    # Support "/" as well as three spaces as seperator
+    return string.gsub("/", "   ").split("   ").map{ |morseWord|
+      morseWord.split(" ").map{ |morseCharacter|
+        rootNode.pull(morseCharacter)
+      }.join("")
+    }.join(" ")
+  end
+end
+
+puts "Morse Code"
+puts "==================="
+puts "a quick and (very) dirty, (very) not DRY, code challenge entry"
+puts "by Matthew Seeley <matthew@threadlight.com>"
+puts ""
+file = File.open((ARGV[0] ? ARGV[0].to_s : "challenge3_sample.txt"), "rb")
+puts MorseCode.convertString(file.read)
+file.close
