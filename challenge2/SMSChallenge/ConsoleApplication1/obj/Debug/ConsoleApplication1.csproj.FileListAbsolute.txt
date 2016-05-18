@@ -1,6 +1,0 @@
-C:\Source\GoogleIO\GoogleIO2016-CodeChallenge\challenge2\SMSChallenge\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
-C:\Source\GoogleIO\GoogleIO2016-CodeChallenge\challenge2\SMSChallenge\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
-C:\Source\GoogleIO\GoogleIO2016-CodeChallenge\challenge2\SMSChallenge\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
-C:\Source\GoogleIO\GoogleIO2016-CodeChallenge\challenge2\SMSChallenge\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
-C:\Source\GoogleIO\GoogleIO2016-CodeChallenge\challenge2\SMSChallenge\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
-C:\Source\GoogleIO\GoogleIO2016-CodeChallenge\challenge2\SMSChallenge\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
