@@ -13,12 +13,11 @@ Entries are granted based upon the challenges you solve.  They are numbered in o
 
 
 ### Instructions
-1. Clone this repository, which can be found at https://github.com/BravoLT/GoogleIO2016-CodeChallenge
-2. Create a branch for your changes. Branch name is not important.
-3. Complete as many of the challenges as you can.  
+1. Fork this repository, which can be found at https://github.com/BravoLT/GoogleIO2016-CodeChallenge
+2. Complete as many of the challenges as you can.  
   * For challenges that require an input file, you will be provided a sample file. We will test it against a separate file (same file will be used for all entries) for the final result.
   * Each challenge should provide a script to execute it.  This script should run any commands required to build the code and then run it.  For example, a solution written in Java and using Maven should run the Maven build and then execute it.
-4. Push your branch to the main repository and create a pull request. The pull request should contain your full name, mobile number, and email address.
+3. Push your branch to the main repository and create a pull request. The pull request should contain your full name, mobile number, and email address.
 
 
 
