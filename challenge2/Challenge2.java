@@ -18,7 +18,7 @@ public class Challenge2 {
 
 		try {
 
-			br = new BufferedReader(new FileReader("File name or File location"));
+			br = new BufferedReader(new FileReader("challenge2_sample.txt"));
 
 			Phrase = br.readLine() + ".";
 			
