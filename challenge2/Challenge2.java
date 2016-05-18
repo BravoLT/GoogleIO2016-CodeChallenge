@@ -20,7 +20,7 @@ public class Challenge2 throws IOException, FileNotFoundException {
 
 		try {
 
-			br = new BufferedReader(new FileReader("challenge2_sample.txt"));
+			br = new BufferedReader(new FileReader("src\\challenge2_sample.txt"));
 
 			Phrase = br.readLine() + ".";
 			
