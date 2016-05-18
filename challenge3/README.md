@@ -1,3 +1,17 @@
+# Challenge 3
+
+Requires any recent version of Ruby, on Windows, Mac OSX, or Linux. (I happen to be using Bash on Ubuntu on Windows, with Ruby 1.9.3p484)
+
+> ruby challenge3.rb
+
+This will, by default, load the challenge3_sample.txt provided. (NOTE: This assumes you are already in the challenge2 directory -- the file path is relative.)
+
+You can also pass in an specific file to convert by using an explicit filename, such as :
+
+> ruby challenge3.rb challenge3_fox.txt
+
+challenge3_fox.txt is there as a test/check to show that all of the letters and numbers are translating as expected.
+
 # You mean there's a system for this?
 
 ![Morse Code Rocks](http://cdn.quotesgram.com/img/99/45/123144686-morse_code-34999.gif)
