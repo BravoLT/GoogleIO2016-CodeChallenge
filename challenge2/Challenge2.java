@@ -1,9 +1,10 @@
 //Ali Itani
 import java.io.BufferedReader;
-Import java.io.IOException;
+import java.io.IOException;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 
-public class Challenge2 throws IOException {
+public class Challenge2 throws IOException, FileNotFoundException {
 
 	public static void main(String[] args) {
 
