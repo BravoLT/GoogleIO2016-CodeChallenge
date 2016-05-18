@@ -1,8 +1,9 @@
 //Ali Itani
 import java.io.BufferedReader;
+Import java.io.IOException;
 import java.io.FileReader;
 
-public class Challenge2 {
+public class Challenge2 throws IOException {
 
 	public static void main(String[] args) {
 
