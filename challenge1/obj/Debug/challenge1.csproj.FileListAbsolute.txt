@@ -1,0 +1,6 @@
+C:\Users\Kyle Smith\Documents\Visual Studio 2015\Projects\GoogleIO2016-CodeChallenge\challenge1\bin\Debug\challenge1.exe.config
+C:\Users\Kyle Smith\Documents\Visual Studio 2015\Projects\GoogleIO2016-CodeChallenge\challenge1\bin\Debug\challenge1.exe
+C:\Users\Kyle Smith\Documents\Visual Studio 2015\Projects\GoogleIO2016-CodeChallenge\challenge1\bin\Debug\challenge1.pdb
+C:\Users\Kyle Smith\Documents\Visual Studio 2015\Projects\GoogleIO2016-CodeChallenge\challenge1\obj\Debug\challenge1.csprojResolveAssemblyReference.cache
+C:\Users\Kyle Smith\Documents\Visual Studio 2015\Projects\GoogleIO2016-CodeChallenge\challenge1\obj\Debug\challenge1.exe
+C:\Users\Kyle Smith\Documents\Visual Studio 2015\Projects\GoogleIO2016-CodeChallenge\challenge1\obj\Debug\challenge1.pdb
