@@ -28,14 +28,14 @@ public class Morse {
 	static Node root = null;
 
 	private static Node buildTree() {
-		Node qMark = new Node('?',null,null);
-		Node slash = new Node('/',null,null);
-		Node asym = new Node('@',null,null);
-		Node period = new Node('.',null,null);
-		Node AR = new Node('\n',period,null);
-		Node aTop = new Node(' ',null,asym);
-		Node qTop = new Node(' ',null,qMark);
-		Node Ä = new Node('Ä',null,AR);
+		Node qMark = new Node('?', null, null);
+		Node slash = new Node('/', null, null);
+		Node asym = new Node('@', null, null);
+		Node period = new Node('.', null, null);
+		Node AR = new Node('\n', period, null);
+		Node aTop = new Node(' ', null, asym);
+		Node qTop = new Node(' ', null, qMark);
+		Node Ä = new Node('Ä', null, AR);
 		Node zero = new Node('0', null, null);
 		Node nine = new Node('9', null, null);
 		Node space = new Node(' ', zero, nine);
@@ -44,8 +44,8 @@ public class Morse {
 		Node o = new Node('O', space, dot);
 		Node seven = new Node('7', null, null);
 		Node q = new Node('Q', null, null);
-		Node comma = new Node(',',null,null);
-		Node commahead = new Node(' ',comma,null);
+		Node comma = new Node(',', null, null);
+		Node commahead = new Node(' ', comma, null);
 		Node z = new Node('Z', commahead, seven);
 		Node g = new Node('G', q, z);
 		Node m = new Node('M', o, g);
@@ -102,7 +102,11 @@ public class Morse {
 				StringTokenizer letterCodes = new StringTokenizer(wordCode, " ");
 				while (letterCodes.hasMoreElements()) {
 					String letterCode = letterCodes.nextToken().trim();
-					wordBuffer.append(traverseCode(letterCode, root));
+					try {
+						wordBuffer.append(traverseCode(letterCode, root));
+					} catch (NullPointerException npe) {
+						System.out.println("Unsupported character found: " + letterCode);
+					}
 				}
 				result.append(wordBuffer).append(" ");
 			}
@@ -111,7 +115,6 @@ public class Morse {
 	}
 
 	static private Character traverseCode(String code, Node node) {
-		System.out.println(code+"="+node.value);
 		if (code.length() > 0) {
 			if (code.charAt(0) == '-') {
 				return traverseCode(code.substring(1), node.dah());
