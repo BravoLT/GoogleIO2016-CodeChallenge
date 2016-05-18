@@ -10,10 +10,10 @@ namespace challenge3
             switch (code)
             {
                 case '-':
-                    return tree.DAH;
+                    return tree?.DAH;
 
                 case '.':
-                    return tree.DIT;
+                    return tree?.DIT;
             }
 
             return null;
@@ -169,7 +169,7 @@ namespace challenge3
                     foreach (char code in letter)
                         found = FindLetter(code, found);
 
-                    Console.Write(found.Character);
+                    Console.Write(found?.Character ?? '#');
                 }
 
                 Console.Write(" ");
