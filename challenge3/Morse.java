@@ -28,6 +28,9 @@ public class Morse {
 	static Node root = null;
 
 	private static Node buildTree() {
+		Node period = new Node('.',null,null);
+		Node AR = new Node('\n',period,null);
+		Node Ä = new Node('Ä',null,AR);
 		Node zero = new Node('0', null, null);
 		Node nine = new Node('9', null, null);
 		Node space = new Node(' ', zero, nine);
@@ -36,7 +39,9 @@ public class Morse {
 		Node o = new Node('O', space, dot);
 		Node seven = new Node('7', null, null);
 		Node q = new Node('Q', null, null);
-		Node z = new Node('Z', null, seven);
+		Node comma = new Node(',',null,null);
+		Node commahead = new Node(' ',comma,null);
+		Node z = new Node('Z', commahead, seven);
 		Node g = new Node('G', q, z);
 		Node m = new Node('M', o, g);
 		Node six = new Node('6', null, null);
@@ -61,7 +66,7 @@ public class Morse {
 		Node v = new Node('V', three, null);
 		Node h = new Node('H', four, five);
 		Node w = new Node('W', j, p);
-		Node r = new Node('R', null, l);
+		Node r = new Node('R', Ä, l);
 		Node u = new Node('U', dash, f);
 		Node s = new Node('S', v, h);
 		Node a = new Node('A', w, r);
@@ -101,6 +106,7 @@ public class Morse {
 	}
 
 	static private Character traverseCode(String code, Node node) {
+		System.out.println(code+"="+node.value);
 		if (code.length() > 0) {
 			if (code.charAt(0) == '-') {
 				return traverseCode(code.substring(1), node.dah());
