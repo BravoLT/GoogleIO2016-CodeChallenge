@@ -17,7 +17,7 @@ MAP = { '.-' => 'A', '-...' => 'B', '-.-.' => 'C',
 
 result = []
 
-file='challenge3_sample.txt'
+file = ARGV[0]
 File.readlines(file).each do |line|
   words = line.split('   ')
   words.each do | word | 

@@ -1,3 +1,3 @@
 #!/bin/sh
 
-ruby translate.rb
+ruby translate.rb $1

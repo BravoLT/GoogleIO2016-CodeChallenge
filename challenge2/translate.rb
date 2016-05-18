@@ -11,7 +11,7 @@ MAP = { '2' => 'A', '22' => 'B', '222' => 'C',
 
 result = []
 
-file='challenge2_sample.txt'
+file=ARGV[0]
 File.readlines(file).each do |line|
   words = line.split
   words.each do | word | 
